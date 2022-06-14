@@ -10,53 +10,29 @@
 
 using namespace std; 
 
-string now; 
-//int c = 0;			
-
-void clear();
-vector<const char*> parsing(string);
-void exec(vector<const char*>);
-
 void clear(){system("@cls||clear");}
 
-
-vector<const char*> parsing(string s){
-	vector<const char*> args; 
-	vector<string> commands;
-	string aux = ""; 
-	for(auto i : s){
-		if(i != ' ' ) aux+=i;
-		else{
-			commands.push_back(aux);
-			aux = "";
-		}
-	}
-	commands.push_back(aux);
-	for(int i = 0; i < commands.size(); i++) args.push_back(commands[i].c_str());
-	return args;
+void exec() {
+    const char* cmd = "ps aux"; 
+    char buffer[128];
+    FILE* out = fopen("ps_aux_out", "w+");
+    FILE* pipe = popen("ps aux", "r");
+    if (!pipe) throw std::runtime_error("popen() failed!");
+    try {
+        while (fgets(buffer, sizeof buffer, pipe) != NULL) {
+            fprintf(out, "%s\n", buffer);
+        }
+    } catch (...) {
+        pclose(pipe);
+        throw;
+    }
+    pclose(pipe);
+    fclose(out);
 }
 
-void exec(string com){
-	now = "";
-	vector<const char*> arg = parsing(com);
-	char *args[arg.size()+1];
-	for(int i = 0; i < arg.size(); i++) args[i] = (char*)arg[i];
-	args[arg.size()]=NULL;
-	
-	int pid = fork();
-	if(pid<0) cout << "error" << endl;
-	else if (pid == 0) {
-		execvp(args[0], args);
-		perror("comando no existente");
-		exit(EXIT_FAILURE);	
-	}
-	else wait(NULL);
-	return;
-}
 
 int main(int argc, char const *argv[]){
 	clear();
-    if(argc!=2) return 0; 
-	exec(argv[1]);
+    exec();
 	return 0;
 }

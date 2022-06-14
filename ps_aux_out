@@ -1,0 +1,74 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+
+root         1  0.0  0.0   8940   332 ?        Ssl  18:09   0:00 /init
+
+root         9  0.0  0.0   8948   236 tty1     Ss   18:09   0:00 /init
+
+nicolas     10  0.0  0.0  18212  3760 tty1     S    18:09   0:00 -bash
+
+nicolas     93  0.0  0.0  13968  1568 tty1     T    18:10   0:00 ./a.out
+
+nicolas     96  0.0  0.0  16056  2152 tty1     T    18:10   0:00 htop
+
+nicolas    102  0.0  0.0  13948  1560 tty1     T    18:12   0:00 ./a.out
+
+nicolas    105  0.0  0.0  16056  2152 tty1     T    18:12   0:00 htop
+
+nicolas    106  0.0  0.0  13948  1556 tty1     T    18:12   0:00 ./a.out ls
+
+nicolas    109  0.0  0.0  16332  2364 tty1     T    18:12   0:00 htop
+
+nicolas    115  0.0  0.0  13948  1556 tty1     T    18:13   0:00 ./a.out ls
+
+nicolas    222  0.0  0.0  11312   268 tty1     T    18:13   0:00 ls
+
+nicolas    246  0.0  0.0  13948  1556 tty1     T    18:15   0:00 ./a.out htop
+
+nicolas    249  0.0  0.0  16324  2436 tty1     T    18:15   0:00 htop
+
+nicolas    250  0.0  0.0  13948  1556 tty1     T    18:15   0:00 ./a.out top
+
+nicolas    253  0.0  0.0  18916  2144 tty1     T    18:15   0:00 top
+
+nicolas    259  0.0  0.0  13944  1544 tty1     T    18:16   0:00 ./a.out top
+
+nicolas    262  0.0  0.0  18916  2144 tty1     T    18:16   0:00 top
+
+nicolas    319  0.0  0.0  13948  1624 tty1     T    18:31   0:00 ./a.out htop
+
+nicolas    322  0.0  0.0  10656   680 tty1     T    18:31   0:00 sh -c top
+
+nicolas    323  0.0  0.0  18916  2148 tty1     T    18:31   0:00 top
+
+nicolas    329  0.0  0.0  13948  1604 tty1     T    18:31   0:00 ./a.out htop
+
+nicolas    332  0.0  0.0  10656   680 tty1     T    18:31   0:00 sh -c htop
+
+nicolas    333  0.0  0.0  16312  2432 tty1     T    18:31   0:00 htop
+
+nicolas    334  0.0  0.0  13948  1620 tty1     T    18:31   0:00 ./a.out top
+
+nicolas    337  0.0  0.0  10656   680 tty1     T    18:31   0:00 sh -c top
+
+nicolas    338  0.0  0.0  18916  2164 tty1     T    18:31   0:00 top
+
+nicolas    364  0.0  0.0  16312  2440 tty1     T    18:32   0:00 htop -C
+
+nicolas    375  0.0  0.0  16888  2624 tty1     T    18:33   0:00 nano file.out
+
+nicolas    379  0.0  0.0  16888  2628 tty1     T    18:33   0:00 nano file
+
+nicolas    388  0.0  0.0  16888  2648 tty1     T    18:34   0:00 nano file
+
+nicolas    414  0.0  0.0  13948  1612 tty1     T    18:35   0:00 ./a.out ls
+
+nicolas    417  0.0  0.0  10656   680 tty1     T    18:35   0:00 sh -c htop
+
+nicolas    418  0.0  0.0  16312  2432 tty1     T    18:35   0:00 htop
+
+nicolas    443  0.0  0.0  13948  1596 tty1     S    18:43   0:00 ./a.out ls
+
+nicolas    446  0.0  0.0  10656   684 tty1     S    18:43   0:00 sh -c ps aux
+
+nicolas    447  0.0  0.0  18660  1900 tty1     R    18:43   0:00 ps aux
+
