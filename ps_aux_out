@@ -4,71 +4,96 @@ root         1  0.0  0.0   8940   332 ?        Ssl  18:09   0:00 /init
 
 root         9  0.0  0.0   8948   236 tty1     Ss   18:09   0:00 /init
 
-nicolas     10  0.0  0.0  18212  3760 tty1     S    18:09   0:00 -bash
+nicolas     10  0.0  0.0  18212  3764 tty1     S    18:09   0:00 -bash
 
-nicolas     93  0.0  0.0  13968  1568 tty1     T    18:10   0:00 ./a.out
+nicolas     93  0.0  0.0  13968  1556 tty1     T    18:10   0:00 ./a.out
 
-nicolas     96  0.0  0.0  16056  2152 tty1     T    18:10   0:00 htop
+nicolas     96  0.0  0.0  16056  2008 tty1     T    18:10   0:00 htop
 
-nicolas    102  0.0  0.0  13948  1560 tty1     T    18:12   0:00 ./a.out
+nicolas    102  0.0  0.0  13948  1548 tty1     T    18:12   0:00 ./a.out
 
-nicolas    105  0.0  0.0  16056  2152 tty1     T    18:12   0:00 htop
+nicolas    105  0.0  0.0  16056  2008 tty1     T    18:12   0:00 htop
 
-nicolas    106  0.0  0.0  13948  1556 tty1     T    18:12   0:00 ./a.out ls
+nicolas    106  0.0  0.0  13948  1544 tty1     T    18:12   0:00 ./a.out ls
 
-nicolas    109  0.0  0.0  16332  2364 tty1     T    18:12   0:00 htop
+nicolas    109  0.0  0.0  16332  2292 tty1     T    18:12   0:00 htop
 
-nicolas    115  0.0  0.0  13948  1556 tty1     T    18:13   0:00 ./a.out ls
+nicolas    115  0.0  0.0  13948  1544 tty1     T    18:13   0:00 ./a.out ls
 
 nicolas    222  0.0  0.0  11312   268 tty1     T    18:13   0:00 ls
 
-nicolas    246  0.0  0.0  13948  1556 tty1     T    18:15   0:00 ./a.out htop
+nicolas    246  0.0  0.0  13948  1544 tty1     T    18:15   0:00 ./a.out htop
 
-nicolas    249  0.0  0.0  16324  2436 tty1     T    18:15   0:00 htop
+nicolas    249  0.0  0.0  16324  2300 tty1     T    18:15   0:00 htop
 
-nicolas    250  0.0  0.0  13948  1556 tty1     T    18:15   0:00 ./a.out top
+nicolas    250  0.0  0.0  13948  1544 tty1     T    18:15   0:00 ./a.out top
 
-nicolas    253  0.0  0.0  18916  2144 tty1     T    18:15   0:00 top
+nicolas    253  0.0  0.0  18916  2004 tty1     T    18:15   0:00 top
 
-nicolas    259  0.0  0.0  13944  1544 tty1     T    18:16   0:00 ./a.out top
+nicolas    259  0.0  0.0  13944  1532 tty1     T    18:16   0:00 ./a.out top
 
-nicolas    262  0.0  0.0  18916  2144 tty1     T    18:16   0:00 top
+nicolas    262  0.0  0.0  18916  2016 tty1     T    18:16   0:00 top
 
-nicolas    319  0.0  0.0  13948  1624 tty1     T    18:31   0:00 ./a.out htop
+nicolas    319  0.0  0.0  13948  1612 tty1     T    18:31   0:00 ./a.out htop
 
-nicolas    322  0.0  0.0  10656   680 tty1     T    18:31   0:00 sh -c top
+nicolas    322  0.0  0.0  10656   676 tty1     T    18:31   0:00 sh -c top
 
-nicolas    323  0.0  0.0  18916  2148 tty1     T    18:31   0:00 top
+nicolas    323  0.0  0.0  18916  2024 tty1     T    18:31   0:00 top
 
-nicolas    329  0.0  0.0  13948  1604 tty1     T    18:31   0:00 ./a.out htop
+nicolas    329  0.0  0.0  13948  1592 tty1     T    18:31   0:00 ./a.out htop
 
-nicolas    332  0.0  0.0  10656   680 tty1     T    18:31   0:00 sh -c htop
+nicolas    332  0.0  0.0  10656   676 tty1     T    18:31   0:00 sh -c htop
 
-nicolas    333  0.0  0.0  16312  2432 tty1     T    18:31   0:00 htop
+nicolas    333  0.0  0.0  16312  2292 tty1     T    18:31   0:00 htop
 
-nicolas    334  0.0  0.0  13948  1620 tty1     T    18:31   0:00 ./a.out top
+nicolas    334  0.0  0.0  13948  1608 tty1     T    18:31   0:00 ./a.out top
 
-nicolas    337  0.0  0.0  10656   680 tty1     T    18:31   0:00 sh -c top
+nicolas    337  0.0  0.0  10656   676 tty1     T    18:31   0:00 sh -c top
 
-nicolas    338  0.0  0.0  18916  2164 tty1     T    18:31   0:00 top
+nicolas    338  0.0  0.0  18916  2032 tty1     T    18:31   0:00 top
 
-nicolas    364  0.0  0.0  16312  2440 tty1     T    18:32   0:00 htop -C
+nicolas    364  0.0  0.0  16312  2316 tty1     T    18:32   0:00 htop -C
 
-nicolas    375  0.0  0.0  16888  2624 tty1     T    18:33   0:00 nano file.out
+nicolas    375  0.0  0.0  16888  2548 tty1     T    18:33   0:00 nano file.out
 
-nicolas    379  0.0  0.0  16888  2628 tty1     T    18:33   0:00 nano file
+nicolas    379  0.0  0.0  16888  2552 tty1     T    18:33   0:00 nano file
 
-nicolas    388  0.0  0.0  16888  2648 tty1     T    18:34   0:00 nano file
+nicolas    388  0.0  0.0  16888  2572 tty1     T    18:34   0:00 nano file
 
-nicolas    414  0.0  0.0  13948  1612 tty1     T    18:35   0:00 ./a.out ls
+nicolas    414  0.0  0.0  13948  1600 tty1     T    18:35   0:00 ./a.out ls
 
-nicolas    417  0.0  0.0  10656   680 tty1     T    18:35   0:00 sh -c htop
+nicolas    417  0.0  0.0  10656   676 tty1     T    18:35   0:00 sh -c htop
 
-nicolas    418  0.0  0.0  16312  2432 tty1     T    18:35   0:00 htop
+nicolas    418  0.0  0.0  16312  2304 tty1     T    18:35   0:00 htop
 
-nicolas    443  0.0  0.0  13948  1596 tty1     S    18:43   0:00 ./a.out ls
+root       458  0.0  0.0   8944   232 tty2     Ss   18:47   0:00 /init
 
-nicolas    446  0.0  0.0  10656   684 tty1     S    18:43   0:00 sh -c ps aux
+nicolas    459  0.0  0.0  18212  3692 tty2     S    18:47   0:00 -bash
 
-nicolas    447  0.0  0.0  18660  1900 tty1     R    18:43   0:00 ps aux
+nicolas    485  0.0  0.0  20448  3748 tty2     S    18:47   0:00 ssh naraya2018@chome.inf.udec.cl
+
+root       486  0.0  0.0   8940   228 tty3     Ss   18:49   0:00 /init
+
+nicolas    487  0.0  0.0  18216  3688 tty3     S    18:49   0:00 -bash
+
+nicolas    509  0.0  0.0  20316  3708 tty3     S    18:49   0:00 ssh naraya2018@chome.inf.udec.cl
+
+root       510  0.0  0.0   8940   228 tty4     Ss   18:49   0:00 /init
+
+nicolas    511  0.0  0.0  18216  3688 tty4     S    18:49   0:00 -bash
+
+nicolas    533  0.0  0.0  20316  3688 tty4     S    18:49   0:00 ssh naraya2018@chome.inf.udec.cl
+
+nicolas    582  0.0  0.3  79032 52276 tty1     T    18:55   0:00 gdb a.out
+
+nicolas    584  0.0  0.0  13928  1496 tty1     t    18:55   0:00 /mnt/c/Users/Nicolas/Desktop/U/Ciberseguridad/Ciberseguridad/a
+.out
+
+nicolas    656  0.0  0.0  16056  2024 tty1     T    19:03   0:00 htop
+
+nicolas    902  0.0  0.0  13944  1576 tty1     S    19:27   0:00 ./a.out
+
+nicolas    903  0.0  0.0  10656   684 tty1     S    19:27   0:00 sh -c ps aux
+
+nicolas    904  0.0  0.0  18660  1896 tty1     R    19:27   0:00 ps aux
 
