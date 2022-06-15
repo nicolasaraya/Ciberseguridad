@@ -1,34 +1,20 @@
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 
-root         1  0.0  0.0   8940   328 ?        Ssl  Jun14   0:00 /init
+root         1  0.5  0.0   8940   328 ?        Ssl  01:16   0:00 /init
 
-nicolas    338  0.0  0.0  18916  2032 ?        T    Jun14   0:00 top
+root         9  0.0  0.0   8944   228 tty1     Ss   01:16   0:00 /init
 
-root       458  0.0  0.0   8944   232 tty2     Ss   Jun14   0:00 /init
+nicolas     10  0.5  0.0  18212  3696 tty1     S    01:16   0:00 -bash
 
-nicolas    459  0.0  0.0  18212  3692 tty2     S    Jun14   0:00 -bash
+root        32  0.0  0.0   8944   228 tty2     Ss   01:16   0:00 /init
 
-root       486  0.0  0.0   8940   228 tty3     Ss   Jun14   0:00 /init
+nicolas     33  0.3  0.0  18212  3692 tty2     S    01:16   0:00 -bash
 
-nicolas    487  0.0  0.0  18216  3684 tty3     S    Jun14   0:00 -bash
+nicolas     55  0.4  0.1  42876 22468 tty2     R    01:16   0:00 ./test
 
-nicolas    509  0.0  0.0  20316  3704 tty3     S    Jun14   0:01 ssh naraya2018@chome.inf.udec.cl
+nicolas     56  5.0  0.0  13960  1764 tty1     S    01:16   0:00 ./a.out
 
-root       510  0.0  0.0   8940   228 tty4     Ss   Jun14   0:00 /init
+nicolas    277  0.0  0.0  10656   684 tty1     S    01:16   0:00 sh -c ps aux
 
-nicolas    511  0.0  0.0  18216  3684 tty4     S    Jun14   0:00 -bash
-
-nicolas    533  0.0  0.0  20316  3684 tty4     S    Jun14   0:00 ssh naraya2018@chome.inf.udec.cl
-
-nicolas    907  0.0  0.0  20316  3752 tty2     S    Jun14   0:00 ssh naraya2018@chome.inf.udec.cl
-
-root       908  0.1  0.0   8948   236 tty5     Ss   00:01   0:00 /init
-
-nicolas    909  1.6  0.0  18212  3748 tty5     S    00:01   0:00 -bash
-
-nicolas    985  1.0  0.0  13948  1580 tty5     S    00:01   0:00 ./a.out
-
-nicolas    986  0.0  0.0  10656   688 tty5     S    00:01   0:00 sh -c ps aux
-
-nicolas    987  0.0  0.0  18660  1900 tty5     R    00:01   0:00 ps aux
+nicolas    278  0.0  0.0  18660  1900 tty1     R    01:16   0:00 ps aux
 

@@ -8,6 +8,8 @@
 #include <cstring>
 #include <fstream>
 #include <iomanip>
+#include <chrono>
+#include <thread>
 
 using namespace std; 
 
@@ -39,6 +41,7 @@ void exec(vector<string>* output) {
 }
 
 void createMap(vector<string>* out, map<int, Data*>* datos){
+    datos->clear();
     string temp = out->at(out->size()-1); 
     //cout << temp << endl; 
     bool a=false;
@@ -50,8 +53,6 @@ void createMap(vector<string>* out, map<int, Data*>* datos){
         if(a == true && temp[pos] == ' ') b = true; 
     }
     //cout << pos << " " << temp[pos-1] << temp[pos-2]  << endl; 
-
-
 
     for(auto i : *out){
         if(i[0]=='U') continue;
@@ -66,8 +67,6 @@ void createMap(vector<string>* out, map<int, Data*>* datos){
             x++;
         }
         for(int i = 0; i < aux.size()/2; i++) swap(aux[i], aux[aux.size()-i-1]);
-
-  
 
         pid = atoi(aux.c_str());
         if(pid==0) continue;
@@ -100,16 +99,55 @@ void createMap(vector<string>* out, map<int, Data*>* datos){
 }
 
 
+
+
 int main(int argc, char const *argv[]){
 	//clear();
     vector<string> out;
     map<int, Data*> datos;
+    map<int, Data*> datosPrev; 
+ 
     exec(&out);
     createMap(&out, &datos);
-    string s = out.at(1); 
+    datosPrev = datos; 
 
+    
 
-    for(auto i : datos){
+    
+    bool flag = false;
+    while(!flag){
+        exec(&out);
+        createMap(&out, &datos);
+
+        for(auto i : datos){
+            int pid = i.first;
+            Data* infoAct = i.second; 
+            Data* infoPrev = datosPrev[{pid}]; 
+            
+            if(infoAct==NULL){
+                //cout<<"error1" << endl;
+                continue; 
+            }
+            if(infoPrev == NULL){
+                //cout << "error2" << endl; 
+                continue; 
+            }
+            
+            if(infoAct->memory > infoPrev->memory + 5 ) {
+                cout << pid << endl;
+                cout << pid << " " << infoAct->cpu << " " << infoAct->memory << endl;
+                cout << pid << " " << infoPrev->cpu << " " << infoPrev->memory << endl;
+                flag=true;
+            }
+        }
+        if(flag) cout << "anomalia" << endl; 
+        else cout << "normal" << endl;
+        datosPrev = datos; 
+        //flag = true; 
+    }
+
+    /*
+    for(auto i : datosPrev){
         cout << "PID: "; 
         cout << fixed << setfill(' ') << setw(5) << i.first;
         cout << " | CPU Usage: " ;
@@ -117,7 +155,7 @@ int main(int argc, char const *argv[]){
         cout << " | Memory Usage: ";
         cout << fixed << setfill(' ')  << setw(4) << setprecision(1) << i.second->memory << endl;
     }
-
+    */
     //cout << out.at(0);
     //cout << out.at(3);
 
