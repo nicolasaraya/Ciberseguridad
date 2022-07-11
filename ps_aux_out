@@ -1,20 +1,28 @@
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 
-root         1  0.5  0.0   8940   328 ?        Ssl  01:16   0:00 /init
+root         1  0.0  0.0   8940   328 ?        Ssl  18:30   0:00 /init
 
-root         9  0.0  0.0   8944   228 tty1     Ss   01:16   0:00 /init
+root         9  0.0  0.0   8940   224 tty1     Ss   18:30   0:00 /init
 
-nicolas     10  0.5  0.0  18212  3696 tty1     S    01:16   0:00 -bash
+pame        10  0.0  0.0  18080  3636 tty1     S    18:30   0:00 -bash
 
-root        32  0.0  0.0   8944   228 tty2     Ss   01:16   0:00 /init
+pame        59  0.0  0.0  13960  1744 tty1     T    18:40   0:00 ./a.out
 
-nicolas     33  0.3  0.0  18212  3692 tty2     S    01:16   0:00 -bash
+pame       176  0.0  0.0   8524    60 tty1     T    18:40   0:00 sh -c ps aux
 
-nicolas     55  0.4  0.1  42876 22468 tty2     R    01:16   0:00 ./test
+pame       215  0.0  0.0  13960  1744 tty1     T    18:50   0:00 ./a.out
 
-nicolas     56  5.0  0.0  13960  1764 tty1     S    01:16   0:00 ./a.out
+pame       334  0.0  0.0  10656   684 tty1     T    18:50   0:00 sh -c ps aux
 
-nicolas    277  0.0  0.0  10656   684 tty1     S    01:16   0:00 sh -c ps aux
+pame       335  0.0  0.0  13360   788 tty1     T    18:50   0:00 ps aux
 
-nicolas    278  0.0  0.0  18660  1900 tty1     R    01:16   0:00 ps aux
+pame       345 16.4  0.0  13960  1688 tty1     T    18:51   0:36 ./a.out
+
+pame       359 30.2  0.0  13960  1732 tty1     T    18:52   0:53 ./a.out
+
+pame       387  0.0  0.0  13960  1584 tty1     S    18:55   0:00 ./a.out
+
+pame       388  0.0  0.0  10656   688 tty1     S    18:55   0:00 sh -c ps aux
+
+pame       389  0.0  0.0  18660  1900 tty1     R    18:55   0:00 ps aux
 
