@@ -92,28 +92,34 @@ bool ResourcesMonitor::ScanResources(){
     exec();
     createMap();
 
+    int count = 0; 
     for(auto i : datos){
         int pid = i.first;
         Data* infoAct = i.second; 
         Data* infoPrev = datosPrev[{pid}]; 
             
-        if(infoAct==NULL){
-            //cout<<"error1" << endl;
-            continue; 
-        }
-        if(infoPrev == NULL){
-            //cout << "error2" << endl; 
-            continue; 
-        }
-            
-        if(infoAct->memory > infoPrev->memory + 5 ) {
+        if(infoAct==NULL) continue; 
+        
+        if(infoPrev == NULL) continue; 
+        
+        if(infoAct->memory - infoPrev->memory > 3 ) {
+            cout << "*** Anomaly: ***" << endl;
             cout << pid << endl;
             cout << pid << " " << infoAct->cpu << " " << infoAct->memory << endl;
             cout << pid << " " << infoPrev->cpu << " " << infoPrev->memory << endl;
             flag=true;
         }
+
+        /*
+        if(count > datos.size()-10){
+           cout << pid << endl;
+            cout << pid << " " << infoAct->cpu << " " << infoAct->memory <<" "<< infoAct->memory + 5<< endl;
+            cout << pid << " " << infoPrev->cpu << " " << infoPrev->memory << endl; 
+        }
+        count++;*/
+        
     }
-    printCommand();
+    //printCommand();
     datosPrev = datos; 
 
     if(flag) {

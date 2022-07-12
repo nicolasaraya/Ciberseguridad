@@ -1,12 +1,8 @@
+a.out
+
 FilesMonitor.cpp
 
 FilesMonitor.h
-
-ResourcesMonitor.cpp
-
-ResourcesMonitor.h
-
-a.out
 
 ls_out
 
@@ -14,5 +10,11 @@ main.cpp
 
 ps_aux_out
 
+ResourcesMonitor.cpp
+
+ResourcesMonitor.h
+
 test
+
+testFiles
 

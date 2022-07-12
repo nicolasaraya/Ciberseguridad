@@ -9,11 +9,18 @@ using namespace std;
 
 class FilesMonitor{
     private:
-        void exec();
+        string path = "./testFiles";
+        map<string, int> dataNow;
+        map<string, int> dataPrev; 
         vector<string> out;
+        void readFiles();
+        void createMap();
+        void exec();
+        void printMap(map<string, int>);
     public:
         FilesMonitor();
         ~FilesMonitor();
+        void ScanFiles();
 };
 
 
