@@ -17,16 +17,19 @@ using namespace std;
 
 void clear(){system("@cls||clear");}
 
+
+
+
 int main(int argc, char const *argv[]){
 	//clear();
 
     ResourcesMonitor* r = new ResourcesMonitor();
     FilesMonitor* f = new FilesMonitor();
-    bool flag = true;
-    while(!flag){
-        //if(r->ScanResources()) flag = true;
-
-
+    
+    while(1){
+        if(r->ScanResources()) break;
+        getchar();
+        cout << "ok" << endl;
     }
 
 	return 0;

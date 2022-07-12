@@ -113,7 +113,9 @@ bool ResourcesMonitor::ScanResources(){
             flag=true;
         }
     }
+    printCommand();
     datosPrev = datos; 
+
     if(flag) {
         cout << "Resources anomaly" << endl; 
         return true;
@@ -121,4 +123,9 @@ bool ResourcesMonitor::ScanResources(){
     else cout << "normal" << endl;
     
     return false;
+}
+
+
+void ResourcesMonitor::printCommand(){
+    for(auto i : out) cout << i << endl;
 }

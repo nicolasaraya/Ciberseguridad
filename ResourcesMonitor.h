@@ -22,6 +22,7 @@ class ResourcesMonitor{
         ResourcesMonitor();
         ~ResourcesMonitor();
         bool ScanResources();
+        void printCommand();
 };
 
 
