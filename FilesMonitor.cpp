@@ -1,7 +1,9 @@
 #include "FilesMonitor.h"
 #include <iostream>
 #include <dirent.h>
-
+#include <sys/wait.h>
+#include <unistd.h>
+#include <signal.h>
 using namespace std;
 
 FilesMonitor::FilesMonitor(){
@@ -50,6 +52,8 @@ void FilesMonitor::ScanFiles(){
     //exec();
     createMap();
 
+    for(auto i : out) cout << i << endl;
+
     int newFiles = 0;
     int deletedFiles = 0;
     int filesPrev = dataPrev.size();
@@ -65,11 +69,23 @@ void FilesMonitor::ScanFiles(){
 
     cout << "New: " << newFiles << " Deleted: " << deletedFiles << endl;
     cout << "Num of files: " << filesNow << ", Num of files before: " << filesPrev << endl;
-
-    cout << "***" << endl;
-    //printMap(dataNow); 
-    cout << "***" << endl; 
-    //printMap(dataPrev);
-
+    cout << "Damage: " << damage(newFiles, deletedFiles) << "% "<< endl;
     dataPrev = dataNow; 
+}
+
+double FilesMonitor::damage(int newF, int deletedF){
+    int filesPrev = dataPrev.size();
+    int filesNow = dataNow.size();
+
+
+    if(deletedF > double(filesPrev)*0.5 ){
+        cout << "se han modificado la mitad de archivos" << endl; 
+        sleep(10);
+        return 100; 
+    }
+    return 0;
+
+
+
+
 }

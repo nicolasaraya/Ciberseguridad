@@ -107,6 +107,7 @@ bool ResourcesMonitor::ScanResources(){
             cout << pid << endl;
             cout << pid << " " << infoAct->cpu << " " << infoAct->memory << endl;
             cout << pid << " " << infoPrev->cpu << " " << infoPrev->memory << endl;
+            pidDang.push_back(pid);
             flag=true;
         }
 
@@ -134,4 +135,8 @@ bool ResourcesMonitor::ScanResources(){
 
 void ResourcesMonitor::printCommand(){
     for(auto i : out) cout << i << endl;
+}
+
+vector<int> ResourcesMonitor::getPid(){
+    return pidDang;
 }
