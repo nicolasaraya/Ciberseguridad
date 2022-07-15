@@ -1,0 +1,67 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+
+root         1  0.0  0.0   8940   328 ?        Ssl  18:08   0:00 /init
+
+nicolas    452  0.0  0.1  85516 20512 ?        S    18:18   0:00 gdb a.out
+
+nicolas    454  0.0  0.0  13984  1636 ?        Z    18:18   0:00 /mnt/c/Users/Nicolas/Desktop/U/Ciberseguridad/Ciberseguridad/a
+.out
+
+nicolas    458  0.0  0.0      0     0 ?        Z    18:18   0:00 [sh] <defunct>
+
+root      1452  0.0  0.0   8944   232 tty5     Ss   18:27   0:00 /init
+
+nicolas   1453  0.0  0.0  18212  3728 tty5     S    18:27   0:00 -bash
+
+nicolas   3861  0.0  0.0  18212  1872 tty5     T    18:45   0:00 -bash
+
+nicolas   3873  0.2  6.7 990492 978108 tty5    T    18:45   0:00 ./testResources/execTestResources 1
+
+nicolas   3920  0.0  0.0  18212  1872 tty5     T    18:46   0:00 -bash
+
+nicolas   3936  0.2  6.7 990492 978112 tty5    T    18:46   0:01 ./testResources/execTestResources 1
+
+nicolas   3949  0.0  0.0  18212  1872 tty5     T    18:47   0:00 -bash
+
+nicolas   3961  0.2  6.7 990492 978112 tty5    T    18:47   0:01 ./testResources/execTestResources 1
+
+root      4049  0.0  0.0   8948   236 tty1     Ss   18:48   0:00 /init
+
+nicolas   4050  0.0  0.0  18212  3756 tty1     S    18:48   0:00 -bash
+
+nicolas   4072  0.0  0.0  14104  1840 tty1     T    18:48   0:00 ./a.out
+
+nicolas   4195  0.0  0.0  14104  1836 tty1     T    18:49   0:00 ./a.out
+
+nicolas   4204  0.0  0.0  18212  1872 tty5     T    18:49   0:00 -bash
+
+nicolas   4220  0.4  6.7 990492 978108 tty5    T    18:49   0:00 ./testResources/execTestResources 1
+
+nicolas   4262  0.0  0.0  18212  1872 tty5     T    18:50   0:00 -bash
+
+nicolas   4274  0.5  6.7 990492 978112 tty5    T    18:50   0:01 ./testResources/execTestResources 1
+
+nicolas   4275  0.0  0.0  14104  1840 tty1     T    18:50   0:00 ./a.out
+
+nicolas   4288  0.0  0.0  18212  1872 tty5     T    18:50   0:00 -bash
+
+nicolas   4300  0.5  6.7 990492 978108 tty5    T    18:50   0:01 ./testResources/execTestResources 1
+
+nicolas   4318  0.0  0.0  14104  1860 tty1     S    18:50   0:00 ./a.out
+
+nicolas   4329  0.0  0.0  18212  1872 tty5     T    18:51   0:00 -bash
+
+nicolas   4343  0.7  6.7 990492 978108 tty5    T    18:51   0:01 ./testResources/execTestResources 1
+
+nicolas   4358  0.0  0.0  18212  1872 tty5     T    18:51   0:00 -bash
+
+nicolas   4370  0.8  6.2 990492 913976 tty5    T    18:51   0:01 ./testResources/execTestResources 1
+
+nicolas   4384  0.0  0.0  18212  1872 tty5     T    18:51   0:00 -bash
+
+nicolas   4398  1.0  4.9 990492 726692 tty5    T    18:51   0:01 ./testResources/execTestResources 1
+
+nicolas   4465  0.0  0.0  10656   684 tty1     S    18:53   0:00 sh -c ps aux
+
+nicolas   4466  0.0  0.0  18660  1896 tty1     R    18:53   0:00 ps aux
+

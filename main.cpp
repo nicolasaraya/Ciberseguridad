@@ -15,49 +15,28 @@ int analyzer(){
 
     int count = 0;
     while(1){
-        clear();
-        cout << "Etapa: " << count++ << endl; 
-        if(r->ScanResources()){
-            cout << "Uso alto de memoria\n PID: " << endl; 
-            for(auto i : r->getPid()){
-                cout << i << endl;                 
-            }
-        }
-        
-
-        f->ScanFiles();
-
-
         sleep(3);
-        //getchar();
+        //clear();
+        cout << "Etapa: " << count++ << endl; 
+        if(r->ScanResources() && f->ScanFiles()){
+            return 1;
+        }
+        else {
+            cout << "Normal" << endl;
+        }
     }
-
-
-
-
-
-
 }
 
 
 
 int main(int argc, char const *argv[]){
-<<<<<<< HEAD
-<<<<<<< HEAD
-	//clear();
     ResourcesMonitor* r = new ResourcesMonitor();
     FilesMonitor* f = new FilesMonitor();
-=======
-=======
->>>>>>> 6caeac0ff0c829072d0fabc76f05475d6a39dc52
-
-
-
     int damage = analyzer();
-<<<<<<< HEAD
->>>>>>> 6caeac0ff0c829072d0fabc76f05475d6a39dc52
-=======
->>>>>>> 6caeac0ff0c829072d0fabc76f05475d6a39dc52
-    
+    while(damage){
+        cout << "Ataque detectado" << endl; 
+        sleep(10); 
+        //clear();
+    }
 	return 0;
 }

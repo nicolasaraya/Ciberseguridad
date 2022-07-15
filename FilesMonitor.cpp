@@ -47,12 +47,12 @@ void FilesMonitor::printMap(map<string, int> mp){
     }
 }
 
-void FilesMonitor::ScanFiles(){
+bool FilesMonitor::ScanFiles(){
     readFiles();
     //exec();
     createMap();
 
-    for(auto i : out) cout << i << endl;
+    //for(auto i : out) cout << i << endl;
 
     int newFiles = 0;
     int deletedFiles = 0;
@@ -71,21 +71,22 @@ void FilesMonitor::ScanFiles(){
     cout << "Num of files: " << filesNow << ", Num of files before: " << filesPrev << endl;
     cout << "Damage: " << damage(newFiles, deletedFiles) << "% "<< endl;
     dataPrev = dataNow; 
+    if(damage(newFiles, deletedFiles) > 99){
+        cout << "Daño Files" << endl;
+        sleep(5);
+        return true; 
+    } 
+    return false;
 }
 
 double FilesMonitor::damage(int newF, int deletedF){
     int filesPrev = dataPrev.size();
     int filesNow = dataNow.size();
 
-
     if(deletedF > double(filesPrev)*0.5 ){
-        cout << "se han modificado la mitad de archivos" << endl; 
+        cout << "Se han modificado la mitad de archivos" << endl; 
         sleep(10);
         return 100; 
     }
     return 0;
-
-
-
-
 }

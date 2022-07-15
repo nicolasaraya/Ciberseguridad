@@ -9,7 +9,7 @@ using namespace std;
 
 class FilesMonitor{
     private:
-        string path = "./testFiles/files";
+        string path = "./test/testFiles/files";
         map<string, int> dataNow;
         map<string, int> dataPrev; 
         vector<string> out;
@@ -20,7 +20,7 @@ class FilesMonitor{
     public:
         FilesMonitor();
         ~FilesMonitor();
-        void ScanFiles();
+        bool ScanFiles();
 };
 
 

@@ -6,7 +6,7 @@
 
 using namespace std;
 
-string path = "./files/";
+string path = "./testFiles/files/";
 
 void readFiles(vector<string>* out){
     out->clear();
@@ -52,15 +52,16 @@ int main(int argc, char const *argv[]){
     vector<string> out; 
     readFiles(&out); 
 
+    //for(auto i : out) cout << i << endl;
+
+
     int porc = atoi(argv[1]);
 
     double x = double(porc) / 100;
 
     double range =out.size() * x;
 
-    cout << int(range);
-    
-
+    cout << "Archivos a modificar:" << int(range) << endl;
 
     for(int i = 0; i < int(range); i++){
         if(out.at(i).c_str() == "testFiles.cpp") continue;

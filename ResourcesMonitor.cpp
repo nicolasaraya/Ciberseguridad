@@ -1,4 +1,5 @@
 #include <iostream>
+#include <unistd.h>
 #include "ResourcesMonitor.h"
 
 using namespace std; 
@@ -13,7 +14,7 @@ void ResourcesMonitor::exec() { //escribe cada linea en el vector
     if(!out.empty()) out.clear();
     const char* cmd = "ps aux"; 
     char buffer[128];
-    FILE* outp = fopen("ps_aux_out", "w+");
+    FILE* outp = fopen("./out/ps_aux_out", "w+");
     FILE* pipe = popen("ps aux", "r");
     if (!pipe) throw std::runtime_error("popen() failed!");
     try {
@@ -103,31 +104,23 @@ bool ResourcesMonitor::ScanResources(){
         if(infoPrev == NULL) continue; 
         
         if(infoAct->memory - infoPrev->memory > 3 ) {
-            cout << "*** Anomaly: ***" << endl;
-            cout << pid << endl;
-            cout << pid << " " << infoAct->cpu << " " << infoAct->memory << endl;
-            cout << pid << " " << infoPrev->cpu << " " << infoPrev->memory << endl;
             pidDang.push_back(pid);
             flag=true;
         }
 
-        /*
-        if(count > datos.size()-10){
-           cout << pid << endl;
-            cout << pid << " " << infoAct->cpu << " " << infoAct->memory <<" "<< infoAct->memory + 5<< endl;
-            cout << pid << " " << infoPrev->cpu << " " << infoPrev->memory << endl; 
-        }
-        count++;*/
         
     }
-    //printCommand();
     datosPrev = datos; 
 
     if(flag) {
         cout << "Resources anomaly" << endl; 
+        cout << "Uso alto de memoria\n PID: " << endl; 
+        for(auto i : getPid()){
+            cout << i << endl;                 
+        }
+        sleep(3);
         return true;
     }
-    else cout << "normal" << endl;
     
     return false;
 }
