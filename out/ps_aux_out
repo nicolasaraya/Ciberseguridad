@@ -47,11 +47,11 @@ nicolas   4288  0.0  0.0  18212  1872 tty5     T    18:50   0:00 -bash
 
 nicolas   4300  0.5  6.7 990492 978108 tty5    T    18:50   0:01 ./testResources/execTestResources 1
 
-nicolas   4318  0.0  0.0  14104  1860 tty1     S    18:50   0:00 ./a.out
+nicolas   4318  0.0  0.0  14104  1864 tty1     S    18:50   0:00 ./a.out
 
 nicolas   4329  0.0  0.0  18212  1872 tty5     T    18:51   0:00 -bash
 
-nicolas   4343  0.7  6.7 990492 978108 tty5    T    18:51   0:01 ./testResources/execTestResources 1
+nicolas   4343  0.6  6.7 990492 978108 tty5    T    18:51   0:01 ./testResources/execTestResources 1
 
 nicolas   4358  0.0  0.0  18212  1872 tty5     T    18:51   0:00 -bash
 
@@ -59,9 +59,9 @@ nicolas   4370  0.8  6.2 990492 913976 tty5    T    18:51   0:01 ./testResources
 
 nicolas   4384  0.0  0.0  18212  1872 tty5     T    18:51   0:00 -bash
 
-nicolas   4398  1.0  4.9 990492 726692 tty5    T    18:51   0:01 ./testResources/execTestResources 1
+nicolas   4398  0.9  4.9 990492 726692 tty5    T    18:51   0:01 ./testResources/execTestResources 1
 
-nicolas   4465  0.0  0.0  10656   684 tty1     S    18:53   0:00 sh -c ps aux
+nicolas   4471  0.0  0.0  10656   684 tty1     S    18:53   0:00 sh -c ps aux
 
-nicolas   4466  0.0  0.0  18660  1896 tty1     R    18:53   0:00 ps aux
+nicolas   4472  0.0  0.0  18660  1900 tty1     R    18:53   0:00 ps aux
 
