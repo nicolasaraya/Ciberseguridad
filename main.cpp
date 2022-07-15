@@ -43,14 +43,20 @@ int analyzer(){
 
 int main(int argc, char const *argv[]){
 <<<<<<< HEAD
+<<<<<<< HEAD
 	//clear();
     ResourcesMonitor* r = new ResourcesMonitor();
     FilesMonitor* f = new FilesMonitor();
 =======
+=======
+>>>>>>> 6caeac0ff0c829072d0fabc76f05475d6a39dc52
 
 
 
     int damage = analyzer();
+<<<<<<< HEAD
+>>>>>>> 6caeac0ff0c829072d0fabc76f05475d6a39dc52
+=======
 >>>>>>> 6caeac0ff0c829072d0fabc76f05475d6a39dc52
     
 	return 0;
