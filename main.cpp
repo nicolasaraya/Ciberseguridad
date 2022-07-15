@@ -22,7 +22,6 @@ void clear(){system("@cls||clear");}
 
 int main(int argc, char const *argv[]){
 	//clear();
-
     ResourcesMonitor* r = new ResourcesMonitor();
     FilesMonitor* f = new FilesMonitor();
     
