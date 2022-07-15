@@ -10,6 +10,7 @@
 #include <iomanip>
 #include <chrono>
 #include <thread>
+#include <math.h>
 
 using namespace std; 
 
@@ -18,15 +19,15 @@ using namespace std;
 int main(int argc, char const *argv[]){
 	
     getchar();
-    getchar();
-    cout << "ok" << endl;
+    
+    long long int x = 25000000;
+    if(argc!=2) return 0;
+    int n = atoi(argv[1]);
 
-    vector<vector<long long int>> v; 
-    for(int i = 0; i < 323143434; i++){
-        vector<long long int> x(1231234, 4);
-        v.push_back(x);
-    }
+    cout << n << " gb" << endl;
+    vector<int> v(x*10*n,0); //n gb
+
     getchar();
-    getchar();
+   
 	return 0;
 }

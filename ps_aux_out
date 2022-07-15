@@ -1,28 +1,487 @@
-USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 
-root         1  0.0  0.0   8940   328 ?        Ssl  21:25   0:00 /init
+root           1  0.0  0.1 168880  8976 ?        Ss   jul11   0:09 /sbin/init splash
 
-root         9  0.0  0.0   8948   232 tty1     Ss   21:25   0:00 /init
+root           2  0.0  0.0      0     0 ?        S    jul11   0:00 [kthreadd]
 
-nicolas     10  0.0  0.0  18212  3756 tty1     S    21:25   0:00 -bash
+root           3  0.0  0.0      0     0 ?        I<   jul11   0:00 [rcu_gp]
 
-nicolas    125  1.2  0.0  15428  3208 tty1     T    21:27   0:05 ./a.out
+root           4  0.0  0.0      0     0 ?        I<   jul11   0:00 [rcu_par_gp]
 
-root      8104  0.0  0.0   8944   228 tty2     Ss   21:28   0:00 /init
+root           6  0.0  0.0      0     0 ?        I<   jul11   0:00 [kworker/0:0H-events_highpri]
 
-nicolas   8105  0.0  0.0  18212  3732 tty2     S    21:28   0:00 -bash
+root           9  0.0  0.0      0     0 ?        I<   jul11   0:00 [mm_percpu_wq]
 
-nicolas  13395  0.0  0.0  10656   684 tty1     T    21:29   0:00 sh -c ps aux
+root          10  0.0  0.0      0     0 ?        S    jul11   0:00 [rcu_tasks_rude_]
 
-nicolas  13396  0.0  0.0  10876   276 tty1     T    21:29   0:00 ps aux
+root          11  0.0  0.0      0     0 ?        S    jul11   0:00 [rcu_tasks_trace]
 
-nicolas  13406  0.0  0.0  13960  1740 tty1     T    21:30   0:00 ./a.out
+root          12  0.0  0.0      0     0 ?        S    jul11   0:05 [ksoftirqd/0]
 
-nicolas  13428  0.0  0.0  13960  1740 tty1     S    21:34   0:00 ./a.out
+root          13  0.0  0.0      0     0 ?        I    jul11   0:17 [rcu_sched]
 
-nicolas  13440  0.0  0.0  13940  1484 tty2     S    21:35   0:00 ./a.out
+root          14  0.0  0.0      0     0 ?        S    jul11   0:00 [migration/0]
 
-nicolas  13441  0.0  0.0  10656   688 tty1     S    21:35   0:00 sh -c ps aux
+root          15  0.0  0.0      0     0 ?        S    jul11   0:00 [idle_inject/0]
 
-nicolas  13442  0.0  0.0  18660  1900 tty1     R    21:35   0:00 ps aux
+root          16  0.0  0.0      0     0 ?        S    jul11   0:00 [cpuhp/0]
+
+root          17  0.0  0.0      0     0 ?        S    jul11   0:00 [kdevtmpfs]
+
+root          18  0.0  0.0      0     0 ?        I<   jul11   0:00 [netns]
+
+root          19  0.0  0.0      0     0 ?        I<   jul11   0:00 [inet_frag_wq]
+
+root          20  0.0  0.0      0     0 ?        S    jul11   0:00 [kauditd]
+
+root          21  0.0  0.0      0     0 ?        S    jul11   0:00 [khungtaskd]
+
+root          22  0.0  0.0      0     0 ?        S    jul11   0:00 [oom_reaper]
+
+root          23  0.0  0.0      0     0 ?        I<   jul11   0:00 [writeback]
+
+root          24  0.0  0.0      0     0 ?        S    jul11   0:04 [kcompactd0]
+
+root          25  0.0  0.0      0     0 ?        SN   jul11   0:00 [ksmd]
+
+root          26  0.0  0.0      0     0 ?        SN   jul11   0:00 [khugepaged]
+
+root          72  0.0  0.0      0     0 ?        I<   jul11   0:00 [kintegrityd]
+
+root          73  0.0  0.0      0     0 ?        I<   jul11   0:00 [kblockd]
+
+root          74  0.0  0.0      0     0 ?        I<   jul11   0:00 [blkcg_punt_bio]
+
+root          75  0.0  0.0      0     0 ?        I<   jul11   0:00 [tpm_dev_wq]
+
+root          76  0.0  0.0      0     0 ?        I<   jul11   0:00 [ata_sff]
+
+root          77  0.0  0.0      0     0 ?        I<   jul11   0:00 [md]
+
+root          78  0.0  0.0      0     0 ?        I<   jul11   0:00 [edac-poller]
+
+root          79  0.0  0.0      0     0 ?        I<   jul11   0:00 [devfreq_wq]
+
+root          80  0.0  0.0      0     0 ?        S    jul11   0:00 [watchdogd]
+
+root          82  0.0  0.0      0     0 ?        I<   jul11   0:07 [kworker/0:1H-kblockd]
+
+root          84  0.0  0.0      0     0 ?        S    jul11   0:04 [kswapd0]
+
+root          85  0.0  0.0      0     0 ?        S    jul11   0:00 [ecryptfs-kthrea]
+
+root          87  0.0  0.0      0     0 ?        I<   jul11   0:00 [kthrotld]
+
+root          88  0.0  0.0      0     0 ?        I<   jul11   0:00 [acpi_thermal_pm]
+
+root          90  0.0  0.0      0     0 ?        S    jul11   0:00 [scsi_eh_0]
+
+root          91  0.0  0.0      0     0 ?        I<   jul11   0:00 [scsi_tmf_0]
+
+root          92  0.0  0.0      0     0 ?        S    jul11   0:00 [scsi_eh_1]
+
+root          93  0.0  0.0      0     0 ?        I<   jul11   0:00 [scsi_tmf_1]
+
+root          95  0.0  0.0      0     0 ?        I<   jul11   0:00 [vfio-irqfd-clea]
+
+root          96  0.0  0.0      0     0 ?        I<   jul11   0:00 [mld]
+
+root          97  0.0  0.0      0     0 ?        I<   jul11   0:00 [ipv6_addrconf]
+
+root         107  0.0  0.0      0     0 ?        I<   jul11   0:00 [kstrp]
+
+root         110  0.0  0.0      0     0 ?        I<   jul11   0:00 [zswap-shrink]
+
+root         111  0.0  0.0      0     0 ?        I<   jul11   0:00 [kworker/u3:0]
+
+root         116  0.0  0.0      0     0 ?        I<   jul11   0:00 [charger_manager]
+
+root         159  0.0  0.0      0     0 ?        S    jul11   0:00 [scsi_eh_2]
+
+root         160  0.0  0.0      0     0 ?        I<   jul11   0:00 [cryptd]
+
+root         163  0.0  0.0      0     0 ?        I<   jul11   0:00 [scsi_tmf_2]
+
+root         184  0.0  0.0      0     0 ?        I<   jul11   0:00 [ttm_swap]
+
+root         185  0.0  0.0      0     0 ?        S    jul11   0:23 [irq/18-vmwgfx]
+
+root         186  0.0  0.0      0     0 ?        S    jul11   0:00 [card0-crtc0]
+
+root         187  0.0  0.0      0     0 ?        S    jul11   0:00 [card0-crtc1]
+
+root         188  0.0  0.0      0     0 ?        S    jul11   0:00 [card0-crtc2]
+
+root         189  0.0  0.0      0     0 ?        S    jul11   0:00 [card0-crtc3]
+
+root         190  0.0  0.0      0     0 ?        S    jul11   0:00 [card0-crtc4]
+
+root         191  0.0  0.0      0     0 ?        S    jul11   0:00 [card0-crtc5]
+
+root         192  0.0  0.0      0     0 ?        S    jul11   0:00 [card0-crtc6]
+
+root         193  0.0  0.0      0     0 ?        S    jul11   0:00 [card0-crtc7]
+
+root         269  0.0  0.0      0     0 ?        S    jul11   0:04 [jbd2/sda1-8]
+
+root         270  0.0  0.0      0     0 ?        I<   jul11   0:00 [ext4-rsv-conver]
+
+root         318  0.0  0.2  92564 15032 ?        S<s  jul11   0:01 /lib/systemd/systemd-journald
+
+root         355  0.0  0.0      0     0 ?        S<   jul11   0:00 [loop2]
+
+root         357  0.0  0.0      0     0 ?        S<   jul11   0:00 [loop3]
+
+root         360  0.0  0.0      0     0 ?        S<   jul11   0:02 [loop4]
+
+root         364  0.0  0.0      0     0 ?        S<   jul11   0:00 [loop6]
+
+root         368  0.0  0.0      0     0 ?        S<   jul11   0:00 [loop8]
+
+root         373  0.0  0.0      0     0 ?        S<   jul11   0:00 [loop10]
+
+root         374  0.0  0.0      0     0 ?        S<   jul11   0:00 [loop11]
+
+root         377  0.0  0.0      0     0 ?        S<   jul11   0:02 [loop12]
+
+systemd+     389  0.0  0.1  24000  6840 ?        Ss   jul11   0:01 /lib/systemd/systemd-resolved
+
+root         427  0.0  0.0   8304  3124 ?        Ss   jul11   0:00 /usr/sbin/haveged --Foreground --verbose=1 -w 1024
+
+root         544  0.0  0.0 244680  1024 ?        Ssl  jul11   0:01 /usr/lib/accountsservice/accounts-daemon
+
+root         545  0.0  0.0   2548   172 ?        Ss   jul11   0:03 /usr/sbin/acpid
+
+avahi        549  0.0  0.0   8528  1580 ?        Ss   jul11   0:00 avahi-daemon: running [lubuntu.local]
+
+root         550  0.0  0.0  12036   896 ?        Ss   jul11   0:00 /usr/sbin/cron -f
+
+message+     552  0.0  0.0   9088  2120 ?        Ss   jul11   0:09 /usr/bin/dbus-daemon --system --address=systemd: --nofork --
+nopidfile --systemd-activation --syslog-only
+
+root         553  0.0  0.1 267640  6128 ?        Ssl  jul11   0:01 /usr/sbin/NetworkManager --no-daemon
+
+root         555  0.0  0.0   7156   272 ?        Ss   jul11   0:00 /usr/sbin/dundee -n
+
+root         560  0.0  0.1  34868  8244 ?        Ss   jul11   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-
+triggers
+
+root         561  0.0  0.0   9524  2564 ?        Ss   jul11   0:00 /usr/sbin/ofonod -n
+
+root         563  0.0  0.0 239108  3244 ?        Ssl  jul11   0:00 /usr/lib/policykit-1/polkitd --no-debug
+
+syslog       565  0.0  0.0 224352  2292 ?        Ssl  jul11   0:00 /usr/sbin/rsyslogd -n -iNONE
+
+root         567  0.0  0.0  16636   944 ?        Ss   jul11   0:00 /lib/systemd/systemd-logind
+
+root         568  0.0  0.0 395532  4144 ?        Ssl  jul11   0:00 /usr/lib/udisks2/udisksd
+
+root         570  0.0  0.0  13684   632 ?        Ss   jul11   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+
+avahi        614  0.0  0.0   8348   328 ?        S    jul11   0:00 avahi-daemon: chroot helper
+
+root         685  0.0  0.0 240012  1648 ?        Ssl  jul11   0:00 /usr/sbin/ModemManager --filter-policy=strict
+
+root         689  0.0  0.1 113116  7660 ?        Ssl  jul11   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-u
+pgrade-shutdown --wait-for-signal
+
+root         699  0.0  0.0 139224  1016 ?        Ssl  jul11   0:00 /usr/bin/sddm
+
+whoopsie     759  0.0  0.0 325712  1868 ?        Ssl  jul11   0:00 /usr/bin/whoopsie -f
+
+kernoops     769  0.0  0.0  11260   472 ?        Ss   jul11   0:01 /usr/sbin/kerneloops --test
+
+kernoops     771  0.0  0.0  11260   472 ?        Ss   jul11   0:01 /usr/sbin/kerneloops
+
+root         778  2.0  2.6 398336 155896 tty1    Ssl+ jul11  38:12 /usr/lib/xorg/Xorg -nolisten tcp -auth /var/run/sddm/{b716e9
+b7-7429-4b6e-b36d-8dd1a5110d7f} -background none -noreset -displayfd 17 -seat seat0 vt1
+
+root         830  0.0  0.0  61528  1032 ?        S    jul11   0:00 /usr/lib/x86_64-linux-gnu/sddm/sddm-helper --socket /tmp/sdd
+m-auth57c802e5-16b2-4670-bbf2-a25c0e173f38 --id 1 --start env LXQT_DEFAULT_OPENBOX_CONFIG="/etc/xdg/xdg-Lubuntu/openbox/lxqt-rc
+.xml" /usr/bin/startlxqt --user nicolas --autologin
+
+nicolas      834  0.0  0.0  18596  5252 ?        Ss   jul11   0:00 /lib/systemd/systemd --user
+
+nicolas      835  0.0  0.0 103284  3444 ?        S    jul11   0:00 (sd-pam)
+
+nicolas      840  0.0  0.1 690536 10232 ?        S<sl jul11   1:09 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+
+nicolas      841  0.0  0.1 266400  8444 ?        Sl   jul11   0:05 lxqt-session
+
+rtkit        854  0.0  0.0 152936   252 ?        SNsl jul11   0:00 /usr/libexec/rtkit-daemon
+
+nicolas      855  0.0  0.0   8148  1256 ?        Ss   jul11   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork -
+-nopidfile --systemd-activation --syslog-only
+
+nicolas      898  0.0  0.0  25452   448 ?        S    jul11   0:00 /usr/bin/VBoxClient --clipboard
+
+nicolas      899  0.0  0.0 157588  3456 ?        Sl   jul11   0:00 /usr/bin/VBoxClient --clipboard
+
+nicolas      909  0.0  0.0  25452   448 ?        S    jul11   0:00 /usr/bin/VBoxClient --seamless
+
+nicolas      910  0.0  0.0 157688   464 ?        Sl   jul11   0:00 /usr/bin/VBoxClient --seamless
+
+nicolas      917  0.0  0.0  25452   448 ?        S    jul11   0:00 /usr/bin/VBoxClient --draganddrop
+
+nicolas      918  0.1  0.0 158204   452 ?        Sl   jul11   2:21 /usr/bin/VBoxClient --draganddrop
+
+nicolas      924  0.0  0.0  25452   448 ?        S    jul11   0:00 /usr/bin/VBoxClient --vmsvga
+
+nicolas      925  0.0  0.0 159968   620 ?        Sl   jul11   0:00 /usr/bin/VBoxClient --vmsvga
+
+nicolas      929  0.0  0.0   6040   712 ?        Ss   jul11   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env LXQT_DEFAULT_OPENB
+OX_CONFIG=/etc/xdg/xdg-Lubuntu/openbox/lxqt-rc.xml /usr/bin/startlxqt
+
+nicolas      947  0.0  0.2 236516 13284 ?        Sl   jul11   0:13 /usr/bin/openbox --config-file /home/nicolas/.config/openbox
+/lxqt-rc.xml
+
+nicolas      952  0.0  0.0 309572  1292 ?        Sl   jul11   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+
+nicolas      955  0.0  0.0 239544   456 ?        Sl   jul11   0:00 /usr/libexec/geoclue-2.0/demos/agent
+
+nicolas      957  0.0  0.0 242408  1868 ?        Ssl  jul11   0:00 /usr/libexec/gvfsd
+
+nicolas      962  0.0  2.2 945420 131548 ?       Sl   jul11   1:18 /usr/bin/pcmanfm-qt --desktop --profile=lxqt
+
+nicolas      963  0.0  0.0 339588  4496 ?        Sl   jul11   0:03 /usr/bin/lxqt-globalkeysd
+
+nicolas      965  0.0  0.0 227360  2016 ?        Sl   jul11   0:04 /usr/lib/x86_64-linux-gnu/libexec/kf5/kscreen_backend_launch
+er
+
+nicolas      966  0.0  0.3 403868 22104 ?        Sl   jul11   0:04 /usr/bin/lxqt-notificationd
+
+nicolas      967  0.0  1.0 781700 64528 ?        Sl   jul11   1:06 /usr/bin/lxqt-panel
+
+nicolas      968  0.0  0.0 413744  4268 ?        Sl   jul11   0:03 /usr/bin/lxqt-policykit-agent
+
+nicolas      969  0.0  0.4 303196 28120 ?        Sl   jul11   0:05 /usr/bin/lxqt-runner
+
+nicolas      971  0.0  0.0  18680  2804 ?        S    jul11   0:10 /usr/bin/xscreensaver -no-splash
+
+nicolas      974  0.0  0.2  54900 17784 ?        S    jul11   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+
+nicolas      997  0.0  0.0   2616   908 ?        S    jul11   0:00 /bin/sh /usr/lib/lubuntu-update-notifier/lubuntu-upg-notifie
+r.sh
+
+nicolas     1007  0.0  0.0 382064   844 ?        Sl   jul11   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+
+
+nicolas     1024  0.0  0.0   7244  1108 ?        S    jul11   0:01 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-sp
+i2/accessibility.conf --nofork --print-address 3
+
+nicolas     1033  0.0  0.0 320700  5352 ?        Sl   jul11   0:00 /usr/libexec/gvfsd-trash --spawner :1.10 /org/gtk/gvfs/exec_
+spaw/0
+
+nicolas     1040  0.0  0.0 320072  1624 ?        Ssl  jul11   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+
+nicolas     1045  0.0  0.0 319340  1044 ?        Ssl  jul11   0:03 /usr/libexec/gvfs-afc-volume-monitor
+
+nicolas     1050  0.0  0.0 240592  2692 ?        Ssl  jul11   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+
+nicolas     1055  0.0  0.0 238316   596 ?        Ssl  jul11   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+
+nicolas     1059  0.0  0.0 238492   620 ?        Ssl  jul11   0:00 /usr/libexec/gvfs-goa-volume-monitor
+
+root        1075  0.0  0.0 254724  3040 ?        Ssl  jul11   0:00 /usr/lib/upower/upowerd
+
+nicolas     1085  0.0  0.0 267120  4188 ?        Sl   jul11   0:04 /usr/bin/lxqt-powermanagement
+
+nicolas     1087  0.0  0.1 274308 11016 ?        Sl   jul11   0:06 /usr/bin/qlipper
+
+nicolas     1089  0.0  0.1 275564  6660 ?        Sl   jul11   0:04 /usr/bin/nm-tray
+
+nicolas     1298  0.0  0.0 460328   724 ?        Ssl  jul11   0:00 /usr/libexec/xdg-document-portal
+
+nicolas     1301  0.0  0.0 238384   432 ?        Ssl  jul11   0:00 /usr/libexec/xdg-permission-store
+
+nicolas     1506  0.0  0.1 570352 10664 ?        Sl   jul11   0:01 /usr/bin/snap userd
+
+root        2625  0.0  0.0  23684  4688 ?        Ss   jul11   0:00 /lib/systemd/systemd-udevd
+
+nicolas    15703  0.0  0.0 391612  2204 ?        Ssl  jul11   0:00 /usr/libexec/xdg-desktop-portal
+
+nicolas    15709  0.0  0.0 265892  3404 ?        Sl   jul11   0:04 /usr/lib/x86_64-linux-gnu/libexec/xdg-desktop-portal-kde
+
+nicolas    15713  0.0  0.0 242828  2796 ?        Sl   jul11   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --compone
+nts=secrets
+
+nicolas    15861  0.0  0.0 394192  1208 ?        Sl   jul11   0:00 /usr/libexec/gvfsd-computer --spawner :1.10 /org/gtk/gvfs/ex
+ec_spaw/1
+
+nicolas    20828  0.0  0.0  74952  1928 ?        Ss   jul11   0:00 kdeinit5: Running...
+
+nicolas    20829  0.0  0.0 247864  3200 ?        Sl   jul11   0:04 /usr/lib/x86_64-linux-gnu/libexec/kf5/klauncher --fd=8
+
+nicolas    20977  0.0  0.0 164860  4044 ?        Ssl  jul11   0:00 /usr/libexec/gvfsd-metadata
+
+nicolas    22001  0.0  0.0 162908   808 ?        Sl   jul11   0:05 /usr/libexec/at-spi2-registryd --use-gnome-session
+
+root       35389  0.0  0.0      0     0 ?        I<   jul11   0:00 [xfsalloc]
+
+root       35390  0.0  0.0      0     0 ?        I<   jul11   0:00 [xfs_mru_cache]
+
+root       35394  0.0  0.0      0     0 ?        S    jul11   0:00 [jfsIO]
+
+root       35395  0.0  0.0      0     0 ?        S    jul11   0:00 [jfsCommit]
+
+root       35396  0.0  0.0      0     0 ?        S    jul11   0:00 [jfsSync]
+
+nicolas    64851  0.0  0.0 242008  2604 ?        Sl   jul11   0:04 /usr/bin/kwalletd5
+
+root       65071  0.0  0.0 363860   488 ?        Sl   jul11   0:09 /usr/sbin/VBoxService
+
+root       74972  0.0  0.0      0     0 ?        S<   jul12   0:00 [loop13]
+
+root       75286  0.0  0.0      0     0 ?        S<   jul12   0:00 [loop9]
+
+root       80117  0.0  0.0      0     0 ?        S<   jul12   0:00 [loop5]
+
+root       83118  0.0  0.0   8264   368 ?        Ss   jul12   0:00 /usr/lib/bluetooth/bluetoothd
+
+root      113096  0.0  0.0      0     0 ?        S<   jul12   0:02 [loop0]
+
+nicolas   113336  0.0  0.0 467960  4244 ?        Sl   jul12   0:00 /usr/libexec/gvfsd-network --spawner :1.10 /org/gtk/gvfs/exe
+c_spaw/2
+
+nicolas   113351  0.0  0.0 391328  2056 ?        Sl   jul12   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.10 /org/gtk/gvfs/exec_
+spaw/4
+
+nicolas   113361  0.0  0.0 156100   520 ?        Sl   jul12   0:00 /usr/libexec/dconf-service
+
+nicolas   127811  0.8  2.9 464904 173920 ?       Sl   jul12   5:52 /snap/sublime-text/112/opt/sublime_text/sublime_text --detac
+hed /home/nicolas/SDL/code.c
+
+nicolas   127826  0.0  0.1 109856  7208 ?        Sl   jul12   0:03 /snap/sublime-text/112/opt/sublime_text/plugin_host-3.3 1278
+11 /snap/sublime-text/112/opt/sublime_text/sublime_text /home/nicolas/.config/sublime-text /home/nicolas/.cache/sublime-text /s
+nap/sublime-text/112/opt/sublime_text/Packages
+
+nicolas   127829  0.0  0.2 121656 16628 ?        Sl   jul12   0:20 /snap/sublime-text/112/opt/sublime_text/plugin_host-3.8 1278
+11 /snap/sublime-text/112/opt/sublime_text/sublime_text /home/nicolas/.config/sublime-text /home/nicolas/.cache/sublime-text /s
+nap/sublime-text/112/opt/sublime_text/Packages
+
+root      128064  0.0  0.0      0     0 ?        S<   jul12   0:00 [loop1]
+
+root      135252  0.0  0.0      0     0 ?        S<   jul12   0:01 [loop7]
+
+root      135271  0.0  0.4 735148 28604 ?        Ssl  jul12   0:04 /usr/lib/snapd/snapd
+
+root      138803  0.0  0.0      0     0 ?        S<   jul12   0:00 [loop14]
+
+nicolas   139429  0.0  0.0  13268   328 ?        S    jul12   0:00 /bin/bash /snap/brave/166/opt/brave.com/brave/brave-browser
+
+nicolas   139510  0.0  0.0  10096   140 ?        S    jul12   0:00 cat
+
+nicolas   139511  0.0  0.0  10096   140 ?        S    jul12   0:00 cat
+
+nicolas   139512  0.3  4.1 34261832 247328 ?     Sl   jul12   0:39 /snap/brave/166/opt/brave.com/brave/brave --enable-crashpad
+
+nicolas   139514  0.0  0.0 33589660 1484 ?       Sl   jul12   0:00 /snap/brave/166/opt/brave.com/brave/chrome_crashpad_handler 
+--monitor-self --monitor-self-annotation=ptype=crashpad-handler --database=/home/nicolas/snap/brave/166/.config/BraveSoftware/B
+rave-Browser/Crash Reports --metrics-dir=/home/nicolas/snap/brave/166/.config/BraveSoftware/Brave-Browser --url=https://cr.brav
+e.com --annotation=lsb-release=Ubuntu Core 18 --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=103.1.40.
+107 --initial-client-fd=6 --shared-client-connection
+
+nicolas   139516  0.0  0.0 33580424 168 ?        Sl   jul12   0:00 /snap/brave/166/opt/brave.com/brave/chrome_crashpad_handler 
+--no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/nicolas/snap/brave/166/.config/BraveSoftw
+are/Brave-Browser/Crash Reports --url=https://cr.brave.com --annotation=lsb-release=Ubuntu Core 18 --annotation=plat=Linux --an
+notation=prod=Chrome_Linux --annotation=ver=103.1.40.107 --initial-client-fd=4 --shared-client-connection
+
+nicolas   139522  0.0  0.2 33976660 15416 ?      S    jul12   0:00 /snap/brave/166/opt/brave.com/brave/brave --type=zygote --no
+-zygote-sandbox --enable-crashpad --crashpad-handler-pid=139514 --enable-crash-reporter=7cabf8f1-cbd8-49ea-be4a-655d51f1ab9b, -
+-change-stack-guard-on-fork=enable --enable-crashpad
+
+nicolas   139523  0.0  0.2 33976656 12356 ?      S    jul12   0:00 /snap/brave/166/opt/brave.com/brave/brave --type=zygote --en
+able-crashpad --crashpad-handler-pid=139514 --enable-crash-reporter=7cabf8f1-cbd8-49ea-be4a-655d51f1ab9b, --change-stack-guard-
+on-fork=enable --enable-crashpad
+
+nicolas   139525  0.0  0.2 33976684 17180 ?      S    jul12   0:00 /snap/brave/166/opt/brave.com/brave/brave --type=zygote --en
+able-crashpad --crashpad-handler-pid=139514 --enable-crash-reporter=7cabf8f1-cbd8-49ea-be4a-655d51f1ab9b, --change-stack-guard-
+on-fork=enable --enable-crashpad
+
+nicolas   148549  0.0  1.6 34092784 101156 ?     Sl   jul12   0:08 /snap/brave/166/opt/brave.com/brave/brave --type=gpu-process
+ --enable-crashpad --crashpad-handler-pid=139514 --enable-crash-reporter=7cabf8f1-cbd8-49ea-be4a-655d51f1ab9b, --change-stack-g
+uard-on-fork=enable --gpu-preferences=WAAAAAAAAAAgAAAIAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA
+AAAAAAAIAAAAAAAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --use-gl=angle --use-angle=swiftshader-webgl --shared-files --f
+ield-trial-handle=0,i,2954981877878874443,7696451550546444026,131072
+
+nicolas   148550  0.0  1.7 34055680 106016 ?     Sl   jul12   0:04 /snap/brave/166/opt/brave.com/brave/brave --type=utility --u
+tility-sub-type=network.mojom.NetworkService --lang=es-419 --service-sandbox-type=none --enable-crashpad --crashpad-handler-pid
+=139514 --enable-crash-reporter=7cabf8f1-cbd8-49ea-be4a-655d51f1ab9b, --change-stack-guard-on-fork=enable --shared-files=v8_con
+text_snapshot_data:100 --field-trial-handle=0,i,2954981877878874443,7696451550546444026,131072 --enable-crashpad
+
+nicolas   148551  0.0  0.8 34018064 51248 ?      Sl   jul12   0:00 /snap/brave/166/opt/brave.com/brave/brave --type=utility --u
+tility-sub-type=storage.mojom.StorageService --lang=es-419 --service-sandbox-type=utility --enable-crashpad --crashpad-handler-
+pid=139514 --enable-crash-reporter=7cabf8f1-cbd8-49ea-be4a-655d51f1ab9b, --change-stack-guard-on-fork=enable --shared-files=v8_
+context_snapshot_data:100 --field-trial-handle=0,i,2954981877878874443,7696451550546444026,131072
+
+nicolas   148574  0.0  2.4 1179246944 146364 ?   Sl   jul12   0:01 /snap/brave/166/opt/brave.com/brave/brave --type=renderer --
+enable-crashpad --crashpad-handler-pid=139514 --enable-crash-reporter=7cabf8f1-cbd8-49ea-be4a-655d51f1ab9b, --extension-process
+ --disable-client-side-phishing-detection --display-capture-permissions-policy-allowed --origin-trial-public-key=bYUKPJoPnCxeNv
+u72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --brave_session
+_token=10169409300755452748 --disable-gpu-compositing --lang=es-419 --num-raster-threads=1 --renderer-client-id=28 --launch-tim
+e-ticks=105572846696 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,2954981877878874443,76964515505464440
+26,131072
+
+root      151347  0.0  1.5 521916 90028 ?        Ssl  jul12   0:01 /usr/libexec/fwupd/fwupd
+
+root      151379  0.0  0.1  30788  8556 ?        Ss   jul12   0:00 /usr/sbin/cupsd -l
+
+root      151381  0.0  0.2 178392 12388 ?        Ssl  jul12   0:00 /usr/sbin/cups-browsed
+
+nicolas   153535  0.3  1.4 408192 87236 ?        Sl   jul12   0:15 qterminal
+
+nicolas   153538  0.0  0.0  13716  5332 pts/0    Ss   jul12   0:00 /bin/bash
+
+nicolas   153628  0.0  0.2  16704 14268 pts/0    T    jul12   0:02 ./a.out
+
+nicolas   158076  1.9  4.3 1187719744 259264 ?   Sl   jul12   1:04 /snap/brave/166/opt/brave.com/brave/brave --type=renderer --
+enable-crashpad --crashpad-handler-pid=139514 --enable-crash-reporter=7cabf8f1-cbd8-49ea-be4a-655d51f1ab9b, --disable-client-si
+de-phishing-detection --display-capture-permissions-policy-allowed --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SH
+h8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --brave_session_token=1016940930075
+5452748 --disable-gpu-compositing --lang=es-419 --num-raster-threads=1 --renderer-client-id=44 --launch-time-ticks=111334204289
+ --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,2954981877878874443,7696451550546444026,131072
+
+nicolas   158102  0.0  1.1 1179237652 69472 ?    Sl   jul12   0:00 /snap/brave/166/opt/brave.com/brave/brave --type=renderer --
+enable-crashpad --crashpad-handler-pid=139514 --enable-crash-reporter=7cabf8f1-cbd8-49ea-be4a-655d51f1ab9b, --disable-client-si
+de-phishing-detection --display-capture-permissions-policy-allowed --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SH
+h8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --brave_session_token=1016940930075
+5452748 --disable-gpu-compositing --lang=es-419 --num-raster-threads=1 --renderer-client-id=45 --launch-time-ticks=111335572893
+ --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,2954981877878874443,7696451550546444026,131072
+
+nicolas   158147  0.0  1.3 34207260 79204 ?      Sl   jul12   0:00 /snap/brave/166/opt/brave.com/brave/brave --type=utility --u
+tility-sub-type=audio.mojom.AudioService --lang=es-419 --service-sandbox-type=none --enable-crashpad --crashpad-handler-pid=139
+514 --enable-crash-reporter=7cabf8f1-cbd8-49ea-be4a-655d51f1ab9b, --change-stack-guard-on-fork=enable --shared-files=v8_context
+_snapshot_data:100 --field-trial-handle=0,i,2954981877878874443,7696451550546444026,131072 --enable-crashpad
+
+root      159618  0.0  0.0      0     0 ?        I    jul12   0:00 [kworker/0:0-cgroup_destroy]
+
+nicolas   162682  0.2  1.5 407524 90008 ?        Sl   jul12   0:06 qterminal
+
+root      162743  0.0  0.0      0     0 ?        I    jul12   0:00 [kworker/u2:2-events_unbound]
+
+nicolas   162787  0.0  0.0   6896  4440 pts/0    T    jul12   0:00 ./a.out
+
+nicolas   163439  0.0  0.0   6584  4168 pts/0    T    jul12   0:00 ./a.out
+
+nicolas   163919  0.0  0.0  11968  2840 pts/0    T    jul12   0:00 g++ FilesMonitor.cpp main.cpp ResourcesMonitor.cpp -g
+
+nicolas   163922  0.0  0.9  88880 56964 pts/0    T    jul12   0:00 /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -imultiarch x
+86_64-linux-gnu -D_GNU_SOURCE main.cpp -quiet -dumpbase main.cpp -mtune=generic -march=x86-64 -auxbase main -g -fasynchronous-u
+nwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc0N2FVW.s
+
+nicolas   163923  0.0  0.0   7184  4784 pts/0    T    jul12   0:00 ./a.out
+
+nicolas   164751  0.0  0.0  13628  5500 pts/2    Ss+  jul12   0:00 /bin/bash
+
+nicolas   165480  0.0  0.1   8396  6052 pts/0    S+   jul12   0:00 ./a.out
+
+root      165497  0.0  0.0      0     0 ?        I    jul12   0:00 [kworker/0:1-events]
+
+nicolas   166070  0.0  0.0  10700   580 ?        S    jul12   0:00 sleep 3600
+
+root      166568  0.0  0.0      0     0 ?        I    jul12   0:00 [kworker/u2:0-events_power_efficient]
+
+nicolas   167891  0.0  0.0   2616   536 pts/0    S+   00:00   0:00 sh -c ps aux
+
+nicolas   167892  0.0  0.0  14192  3348 pts/0    R+   00:00   0:00 ps aux
 
