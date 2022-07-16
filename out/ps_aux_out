@@ -13,18 +13,6 @@ root      4608  0.0  0.0   8948   236 tty1     Ss   19:45   0:00 /init
 
 nicolas   4609  0.0  0.0  18212  3792 tty1     S    19:45   0:00 -bash
 
-root      4640  0.0  0.0   8944   232 tty3     Ss   19:45   0:00 /init
-
-nicolas   4641  0.0  0.0  18212  3776 tty3     S    19:45   0:00 -bash
-
-nicolas   4760  0.0  0.0  18212  1868 tty3     T    19:48   0:00 -bash
-
-nicolas   4766  0.1  0.0      0     0 tty3     Z    19:48   0:01 [execTestFiles] <defunct>
-
-nicolas   4771  0.0  0.0  18212  1868 tty3     T    19:51   0:00 -bash
-
-nicolas   4777  0.1  0.0      0     0 tty3     Z    19:51   0:01 [execTestFiles] <defunct>
-
 nicolas   4825  0.0  0.0  18212  1908 tty1     T    19:56   0:00 -bash
 
 nicolas   4836  0.0  0.0      0     0 tty1     Z    19:56   0:00 [analizer] <defunct>
@@ -41,35 +29,27 @@ nicolas   4906  0.0  0.0  18212  1912 tty1     T    20:01   0:00 -bash
 
 nicolas   4918  0.0  0.0  14100  1824 tty1     T    20:01   0:00 ./analizer
 
-nicolas   4939  0.0  0.0  18212  1864 tty3     T    20:02   0:00 -bash
-
-nicolas   4945  0.0  0.0  13944  1664 tty3     T    20:02   0:00 ./test/execTest 70 1
-
-nicolas   4946  0.0  0.0  18212  1864 tty3     T    20:02   0:00 -bash
-
-nicolas   4952  0.0  0.0  13944  1664 tty3     T    20:02   0:00 ./test/execTest 70 1
-
-nicolas   4953  0.0  0.0  18212  1864 tty3     T    20:03   0:00 -bash
-
-nicolas   4959  0.0  0.0  13944  1660 tty3     T    20:03   0:00 ./test/execTest 70 1
-
-nicolas   4960  0.0  0.0  18212  1864 tty3     T    20:03   0:00 -bash
-
-nicolas   4966  2.9  6.3 990508 918272 tty3    T    20:03   0:00 ./test/execTest 70 1
-
 nicolas   4967  0.0  0.0  18212  1912 tty1     T    20:03   0:00 -bash
 
 nicolas   4979  0.0  0.0  14100  1824 tty1     T    20:03   0:00 ./analizer
 
-nicolas   4986  0.0  0.0  18212  1912 tty1     S    20:03   0:00 -bash
+nicolas   4986  0.0  0.0  18212  1912 tty1     T    20:03   0:00 -bash
 
-nicolas   4998  0.0  0.0  14100  1824 tty1     S    20:03   0:00 ./analizer
+nicolas   4998  0.0  0.0  14100  1844 tty1     T    20:03   0:00 ./analizer
 
-nicolas   5007  0.1  0.0  18212  1864 tty3     S    20:04   0:00 -bash
+root      5020  0.0  0.0   8944   232 tty3     Ss   20:08   0:00 /init
 
-nicolas   5013 14.8  6.7 990508 978248 tty3    S    20:04   0:01 ./test/execTest 70 1
+nicolas   5021  0.1  0.0  18212  3700 tty3     S    20:08   0:00 -bash
 
-nicolas   5018  0.0  0.0  10656   688 tty1     S    20:04   0:00 sh -c ps aux
+nicolas   5043  0.0  0.0  18212  1916 tty1     S    20:08   0:00 -bash
 
-nicolas   5019  0.0  0.0  18660  1896 tty1     R    20:04   0:00 ps aux
+nicolas   5055  0.0  0.0  14100  1824 tty1     S    20:08   0:00 ./analizer
+
+nicolas   5068  0.2  0.0  18212  1868 tty3     S    20:08   0:00 -bash
+
+nicolas   5074 25.7  6.7 990508 978244 tty3    S    20:08   0:01 ./test/execTest 70 1
+
+nicolas   5077  0.0  0.0  10656   684 tty1     S    20:08   0:00 sh -c ps aux
+
+nicolas   5078  0.0  0.0  18660  1900 tty1     R    20:08   0:00 ps aux
 
