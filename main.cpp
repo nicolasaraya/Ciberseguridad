@@ -6,7 +6,9 @@
 #include "FilesMonitor.h"
 using namespace std; 
 
-void clear(){system("@cls||clear");}
+void clear(){
+    system("@cls||clear");
+}
 
 
 int analyzer(){
@@ -18,6 +20,7 @@ int analyzer(){
         sleep(3);
         //clear();
         cout << "Etapa: " << count++ << endl; 
+        if (count == 7) return 1; 
         if(r->ScanResources() && f->ScanFiles()){
             return 1;
         }

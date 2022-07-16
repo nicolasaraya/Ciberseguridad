@@ -6,7 +6,7 @@
 
 using namespace std;
 
-string path = "./testFiles/files/";
+string path = "./test/files/";
 
 void readFiles(vector<string>* out){
     out->clear();
@@ -40,26 +40,29 @@ string generador(){
 
 
 
-
-
 int main(int argc, char const *argv[]){
     srand(time(NULL));
-    if(argc != 2) {
-        cout << " ./a.out porcentaje "<< endl;
+    
+    if(argc != 3) {
+        cout << " ./a.out porcentaje gb"<< endl;
         return 0;
     } 
-
     vector<string> out; 
     readFiles(&out); 
 
-    //for(auto i : out) cout << i << endl;
-
-
+    int n = atoi(argv[2]);
     int porc = atoi(argv[1]);
+    long long int x = 25000000;
 
-    double x = double(porc) / 100;
+    cout << "Pulse una tecla para reservar "<< n <<" gb de memoria y modificar el " << porc << "%" << " de archivos" << endl; 
+    getchar();
+    vector<int> v(x*10*n,0); //n gb
+    cout << "Reservando y renombrando" << endl;
+    
 
-    double range =out.size() * x;
+    double aux = double(porc) / 100;
+
+    double range =out.size() * aux;
 
     cout << "Archivos a modificar:" << int(range) << endl;
 
@@ -76,7 +79,8 @@ int main(int argc, char const *argv[]){
         fclose(f);
 
     }
-
+    cout << "Pulse una tecla para salir" << endl;
+    getchar();
     
     return 0;
 }

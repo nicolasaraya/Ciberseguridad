@@ -67,13 +67,13 @@ bool FilesMonitor::ScanFiles(){
         if(dataNow.count({j.first}) == 0) deletedFiles++;
     }
 
-    cout << "New: " << newFiles << " Deleted: " << deletedFiles << endl;
-    cout << "Num of files: " << filesNow << ", Num of files before: " << filesPrev << endl;
-    cout << "Damage: " << damage(newFiles, deletedFiles) << "% "<< endl;
+    //cout << "New: " << newFiles << " Deleted: " << deletedFiles << endl;
+    //cout << "Num of files: " << filesNow << ", Num of files before: " << filesPrev << endl;
+    //cout << "Damage: " << damage(newFiles, deletedFiles) << "% "<< endl;
     dataPrev = dataNow; 
     if(damage(newFiles, deletedFiles) > 99){
-        cout << "Daño Files" << endl;
-        sleep(5);
+        //cout << "Daño Files" << endl;
+        //sleep(5);
         return true; 
     } 
     return false;
@@ -83,9 +83,9 @@ double FilesMonitor::damage(int newF, int deletedF){
     int filesPrev = dataPrev.size();
     int filesNow = dataNow.size();
 
-    if(deletedF > double(filesPrev)*0.5 ){
-        cout << "Se han modificado la mitad de archivos" << endl; 
-        sleep(10);
+    if(deletedF > double(filesPrev) * 0.5 ){
+        cout << "Se han modificado al menos la mitad de archivos" << endl; 
+        //sleep(10);
         return 100; 
     }
     return 0;

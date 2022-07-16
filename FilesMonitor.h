@@ -9,7 +9,7 @@ using namespace std;
 
 class FilesMonitor{
     private:
-        string path = "./test/testFiles/files";
+        string path = "./test/files";
         map<string, int> dataNow;
         map<string, int> dataPrev; 
         vector<string> out;
