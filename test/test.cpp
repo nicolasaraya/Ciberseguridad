@@ -47,19 +47,18 @@ int main(int argc, char const *argv[]){
         cout << " ./a.out porcentaje gb"<< endl;
         return 0;
     } 
-    vector<string> out; 
-    readFiles(&out); 
-
+    
     int n = atoi(argv[2]);
     int porc = atoi(argv[1]);
-    long long int x = 25000000;
-
     cout << "Pulse una tecla para reservar "<< n <<" gb de memoria y modificar el " << porc << "%" << " de archivos" << endl; 
     getchar();
+
+    vector<string> out; 
+    readFiles(&out); 
+    long long int x = 25000000;
     vector<int> v(x*10*n,0); //n gb
     cout << "Reservando y renombrando" << endl;
     
-
     double aux = double(porc) / 100;
 
     double range =out.size() * aux;
