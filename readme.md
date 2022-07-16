@@ -1,19 +1,15 @@
 # Ransomware detector
 
-## Usage
+#### Usage
 
-*  **Use analizer:**
+* **Use analizer**: 
 
-		-`$ chmod +x execAnalizer.sh` 
+  * `$chmod +x execAnalizer.sh`
+  * `$./execAnalizer.sh`
 
-		-`$ ./execAnalizer.sh` 
+* **Use tester:**
 
-*  **Use tester:**
+  Reserve 1Gb of memory and modifies 70% of files in `/test/files` folder (values in execTest.sh)
 
-	Reserve 1 Gb of memory and modifies 70% of files in /test/files folder
-
-		-`$chmod +x execTest.sh` 
-
-		-`$./execTest.sh` 
-
-  
+  * `$chmod +x execTest.sh`
+  * `./execTest.sh`
