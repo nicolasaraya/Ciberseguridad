@@ -20,7 +20,6 @@ int analyzer(){
         sleep(3);
         //clear();
         cout << "Etapa: " << count++ << endl; 
-        if (count == 7) return 1; 
         if(r->ScanResources() && f->ScanFiles()){
             return 1;
         }
